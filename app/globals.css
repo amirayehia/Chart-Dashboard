@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+/* START: General styles */
+body {
+  @apply bg-black	 box-border
+}
+
+/* Header Comp */
+.header {
+  @apply bg-white flex items-center justify-center sm:text-3xl text-red-600 py-4 max-w-screen-md mx-auto rounded-lg;
+
+}
+
+/* Select Comp */
+
+.select__container {
+  @apply max-w-md mx-auto my-7
+}
+
+.select__label {
+  @apply text-white
+}
+
+.select {
+  @apply block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 text-lg;
+}
+
+/* Chart Comp*/
+.chart__description {
+  @apply text-yellow-500 text-2xl mb-10
+}
+
+.chart_container {
+  @apply flex flex-wrap items-center justify-center mt-32 
+}
+
+.chart__item {
+  @apply text-center transition transform  hover:bg-white py-10 rounded-md 
+}
+
+/* END: search manufacturer styles */
